@@ -1,0 +1,52 @@
+.navbar {
+  background-color: #141414;
+  border-bottom: 1px solid rgba(255,255,255,.16);
+  width:97.5%;
+  margin: 0% 1.25% 0% 1.25%;
+  // height: 9vh
+}
+
+.navbar-brand {
+  font-family: Raleway,Arial,Helvetica,sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #dbab83;
+  letter-spacing: 1px;
+}
+.highlight {
+  color: #fff;
+}
+.nav-item {
+  padding: 10px 0px; 
+}
+.navbar .nav-link {
+  font-size: 20px;
+  margin-left: 10px;
+  font-family: Raleway,Arial,Helvetica,sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #dbab83;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.navbar-toggler, .menu-toggler {
+  border: none; 
+  outline: none; 
+  box-shadow: none; 
+  background-color: transparent;
+}
+
+.menu-toggler {
+  padding-left: 1.5rem;
+}
+
+.fa {
+  font-size: 1.25rem;
+}
+
+.fa-times {
+  top:1rem;
+  right:1rem;
+  position: fixed;
+}
+

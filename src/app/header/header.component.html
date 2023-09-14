@@ -1,0 +1,39 @@
+<nav class="navbar sticky-top navbar-expand-lg">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="">SKROLL<span class="highlight">EX</span></a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                <!-- <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>  -->
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+
+            <button class="navbar-toggler" (click)="toggleNavbar()" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i [ngClass]="{'fa-bars': !isOpen, 'fa-times': isOpen}" class="fa " style="color: #fff;"></i>
+            </button>
+     
+
+            <button *ngIf="!isOpen" class="menu-toggler" type="button">
+                <i class="fa fa-bars" style="color: #dbab83;"></i>
+            </button>
+
+        </div>
+
+        
+    </div>
+</nav>
+
+
+  
