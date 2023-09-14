@@ -59,6 +59,43 @@
   font-family: Raleway,Arial,Helvetica,sans-serif;
   white-space: pre-wrap;
   font-weight: 100;
+  opacity: 0.75;
+}
+
+.text-title {
+  font-size: 5rem;
+  font-family: Raleway,Arial,Helvetica,sans-serif;
+  color: #fff;
+  font-weight: 600;
+}
+
+.text-box {
+  padding: 1rem 1rem 0rem 1rem;
+  background-color: rgba(15,14,14,.1)!important;
+  border-color:rgba(255,255,255,.3)!important;
+  border: 1px solid ;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.btn-groups {
+  margin-top: 0.75rem;
+}
+
+.about {
+  padding: 7px 20px;
+  margin-right: 0.75rem;
+  border: 1px solid rgba(255,255,255,.7)!important;
+  background-color: rgba(77,56,36,.9)!important;
+  color: #fff;
+}
+
+.work {
+  padding: 7px 20px;
+  margin-right: 0.75rem;
+  border: 1px solid rgba(255,255,255,.7)!important;
+  background-color: rgba(27,28,36,.9)!important;
+  color: #fff;
 }
 
 
