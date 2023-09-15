@@ -135,3 +135,17 @@
         letter-spacing: 2px;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .about-upper-content {
+        display: none !important;
+    }
+
+    .grid-content .row {
+        flex-direction: column;
+    }
+
+    .grid-content .row .col .row{
+        flex-direction: row;
+    }
+}
