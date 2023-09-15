@@ -2,11 +2,10 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  background-image: url('/assets/images/about/picjumbo1.jpg');
+  background-image: url('/assets/images/about/picjumbo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  text-align: left;
 }
 
 .row {
@@ -49,6 +48,7 @@
         margin: 0;
         font-size: 0.85rem;
         font-weight: 400;
+        letter-spacing: 1px;
     }
 }
 
@@ -82,7 +82,7 @@
 }
 
 .content {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Raleway,Arial, Helvetica, sans-serif;
 
     h1 {
         color: #dbad83;
@@ -103,8 +103,8 @@
 
     p {
         color: #fff;
-        font-weight: 200;
-        font-size: 1rem;
+        font-size: 0.85rem;
+        font-weight: 400;
         padding: 1.5rem 0rem 3rem 0rem;
         letter-spacing: 2px;
         opacity: 0.9;
@@ -116,7 +116,7 @@
 }
 
 .grid-content {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Raleway,Arial, Helvetica, sans-serif;
     color: #fff;
     h5 {
         font-weight: 600;
