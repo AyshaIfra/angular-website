@@ -1,0 +1,137 @@
+.about-upper-content {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-image: url('/assets/images/about/picjumbo1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: left;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.row > * {
+    padding: 0;
+    margin: 0;
+}
+
+.first-row {
+  padding: 2.5rem 1rem 1.5rem 1rem;
+  color: #fff;
+  font-family: Raleway,Arial,Helvetica,sans-serif;
+  white-space: pre-wrap;
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 100;
+    opacity: 0.7;
+  }
+
+  h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-top: 0.5rem;
+  }
+}
+
+.second-row {
+  padding: 1rem 1rem 1rem 1rem;
+  color: #fff;
+  font-family: Raleway,Arial,Helvetica,sans-serif;
+  white-space: pre-wrap;
+
+    p {
+        margin: 0;
+        font-size: 0.85rem;
+        font-weight: 400;
+    }
+}
+
+.color-1 {
+    background-color: rgba(71,67,64,.72);
+}
+
+.color-2 {
+    background-color: rgba(33,30,28,.82);
+}
+
+.color-3 {
+    background-color: rgba(77,56,36,.82);
+}
+
+.color-4 {
+    background-color: rgba(198,237,181,.3);
+}
+
+.color-5 {
+    background-color: rgba(247,239,199,.5);
+}
+
+.color-6 {
+    background-color: rgba(97, 117, 128, 0.83);
+}
+
+.about-lower-content {
+    background-color: #141414;
+    padding: 5rem 0rem 4rem 0rem;
+}
+
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+
+    h1 {
+        color: #dbad83;
+        font-weight: 700;
+        font-size: 4.5rem;
+    }
+
+    h6 {
+        color: #fff;
+        font-weight: 600;
+        font-size: 0.85rem;
+        letter-spacing: 2px;
+
+        .highlight {
+            color: #dbad83;  
+        }
+    }
+
+    p {
+        color: #fff;
+        font-weight: 200;
+        font-size: 1rem;
+        padding: 1.5rem 0rem 3rem 0rem;
+        letter-spacing: 2px;
+        opacity: 0.9;
+    }
+}
+
+.text {
+    text-align: left;
+}
+
+.grid-content {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    h5 {
+        font-weight: 600;
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+
+        .text-color {
+            color: #dbad83; 
+        }
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 0.75rem; 
+        opacity: 0.75;
+        letter-spacing: 2px;
+    }
+}
