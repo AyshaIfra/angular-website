@@ -1,6 +1,7 @@
 .about-upper-content {
     width: 100%;
     overflow: hidden;
+    height: 70vh;
 }
 
 .rows-padding {
@@ -15,6 +16,25 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    text-align: center;
+    
+
+    .container {
+        display: flex;
+	    align-items: center;
+	    justify-content: center;
+        height: 70vh;
+
+        button {
+            padding: 10px 20px;
+            border: 1px solid #fff;
+            background-color: transparent;
+            color: #fff;
+            opacity: 0.75;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+        }
+    }
 }
 
 .right-side {
@@ -24,8 +44,47 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-
+    text-align: center;
+    
     .content {
        padding: 15%;
+       text-align: left;
+
+       h4 {
+            font-weight: 600;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            margin: 0;
+            color: #dbab83;
+
+        span {
+            color: #fff;
+        }
+
+       }
+
+
+       .para-1 {
+        padding-top: 1rem;
+            color: #dbab83;
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            opacity: 0.9;
+       }
+
+       .para-2 {
+           color: #fff;
+           font-size: 0.85rem;
+           font-weight: 400;
+           letter-spacing: 2px;
+           opacity: 0.9;
+       }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .who-we-are .row {
+        flex-direction: column;
     }
 }
