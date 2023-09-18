@@ -71,6 +71,47 @@
     
 }
 
+.animation-text {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    animation: image 5s infinite alternate-reverse; 
+    text-align: center;
+    height: 50vh;
+   
+
+    .bg-clr{
+        background-color: #141414;
+        opacity: 0.75;
+        padding: 10% 0%;
+        height: 50vh;
+    }  
+    
+    .text {
+        color: #fff;
+        font-style: italic;
+    }
+}
+  
+@keyframes image {
+  0% {
+    background-image: url('/assets/images/services/service-1.jpg');
+  }
+  
+  100% {
+    background-image: url('/assets/images/services/service-3.jpg');
+  }
+}
+
+.typewriter {
+    font-size: 2.5rem;
+    color: #dbab83;
+    font-family: Raleway,Arial,Helvetica,sans-serif;
+    white-space: pre-wrap;
+    font-weight: 100;
+    opacity: 0.75;
+    
+}
 
 @media screen and (max-width: 992px) {
     .grid-elements .row {
