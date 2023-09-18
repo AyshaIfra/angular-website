@@ -12,6 +12,7 @@ import { ProcessComponent } from './process/process.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
+import { HowWeWorkComponent } from './how-we-work/how-we-work.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
     ProcessComponent,
     SkillsComponent,
     ContactComponent,
-    WhoWeAreComponent
+    WhoWeAreComponent,
+    HowWeWorkComponent
   ],
   imports: [
     CommonModule,

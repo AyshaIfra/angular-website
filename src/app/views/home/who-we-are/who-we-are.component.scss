@@ -1,83 +1,31 @@
-.who-are-we {
+.about-upper-content {
     width: 100%;
-    background-position: center;
+    overflow: hidden;
+}
+
+.rows-padding {
+    padding: 0;
+    margin: 0;
+}
+
+.left-side {
+    width: 100%;
+    overflow: hidden;
+    background-image: url('/assets/images/who_we_are/wall.jpg');
     background-size: cover;
-    animation: image 5s infinite alternate-reverse; 
-}
-  
-@keyframes image {
-  0% {
-    background-image: url('/assets/images/who_we_are/we1.jpg');
-  }
-  100% {
-    background-image: url('/assets/images/who_we_are/we2.jpg');
-  }
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
-.bground {
-    background-color: rgba(15,14,14,.85);
-    padding: 6rem 0rem;
-}
+.right-side {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
 
-.content {
-    color: #fff;
-    font-family: Raleway,Arial,Helvetica,sans-serif;
-
-    h1 {
-       font-size: 2rem;
-       font-weight: 600;
-
-       span {
-        color: #dbab83;
-       }
+    .content {
+       padding: 15%;
     }
-
-    .text-p {
-        padding: 0 25%;
-        font-size: 0.85rem;
-        font-weight: 400; 
-        opacity: 0.8;
-        letter-spacing: 2px;
-        padding-bottom: 2rem;
-    }
-}
-
-.circle {
-    width: 9.5rem;
-    height: 9.5rem;
-    border-radius: 50%;
-    background: none;
-    box-shadow: none;
-    border: 1px solid #fff;
-    margin-bottom: 2rem;
-}
-
-.circle:hover {
-    width: 9.25rem;
-    height: 9.25rem;
-}
-
-.circle-content {
-
-    h6 {
-        font-size: 0.75rem;
-        font-weight: 600;
-        letter-spacing: 2px;
-        padding-top: 0.5rem;
-        text-decoration: underline 3px solid rgba(239,239,239,.5);
-        text-underline-offset: 1rem;
-    }
-
-    p {
-        font-size: 0.75rem;
-        font-weight: 400;
-        letter-spacing: 2px;
-        padding-top: 1.5rem;
-        opacity: 0.8;
-    }
-}
-
-i {
-    color: #fff;
-    font-size: 2rem;
 }
