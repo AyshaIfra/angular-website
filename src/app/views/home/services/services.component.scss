@@ -1,0 +1,79 @@
+.team {
+    background-color: #141414;
+    padding: 5rem 0rem 4rem 0rem;
+}
+
+.content {
+    font-family: Raleway,Arial, Helvetica, sans-serif;
+
+    h1 {
+        color: #dbad83;
+        font-weight: 700;
+        font-size: 4.5rem;
+    }
+
+    h6 {
+        color: #fff;
+        font-weight: 600;
+        font-size: 0.85rem;
+        letter-spacing: 2px;
+
+        .highlight {
+            color: #dbad83;  
+        }
+    }
+
+    .text-p {
+        color: #fff;
+        font-size: 0.85rem;
+        font-weight: 400;
+        padding: 1.5rem 0rem 3rem 0rem;
+        letter-spacing: 2px;
+        opacity: 0.9;
+    }
+
+}
+
+.grid-elements {
+    text-align: left;
+    font-family: Raleway,Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    
+    h5 {
+        font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        color: #dbad83;  
+        padding-top: 1rem; 
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+        color: #fff; 
+        opacity: 0.85; 
+    }
+
+    ul {
+        list-style-type: '- ';
+        padding: 0;
+        color: #fff;
+        font-size: 0.75rem;
+        opacity: 0.75;
+        letter-spacing: 1px;
+    }
+
+    .grid-content {
+        border-top: 2px solid rgba(255,255,255,.7);
+        width: 100%;
+    }
+    
+}
+
+
+@media screen and (max-width: 992px) {
+    .grid-elements .row {
+        flex-direction: column;
+    }
+}
