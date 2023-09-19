@@ -2,10 +2,10 @@
     width: 100%;
     background-position: center;
     background-size: cover;
-    animation: image 5s infinite alternate-reverse; 
+    animation: image2 5s infinite alternate-reverse; 
 }
   
-@keyframes image {
+@keyframes image2 {
   0% {
     background-image: url('/assets/images/how_we_work/we1.jpg');
   }

@@ -38,10 +38,10 @@
     background-color: #eee;
     background-position: center;
     background-size: cover;
-    animation: image 5s infinite alternate-reverse; 
+    animation: image1 5s infinite alternate-reverse; 
 }
   
-@keyframes image {
+@keyframes image1 {
   0% {
     background-image: url('/assets/images/landing_page/image_1.jpg');
   }

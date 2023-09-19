@@ -1,5 +1,6 @@
 import { Component, OnInit,ElementRef, ViewChild} from '@angular/core';
 import Typed from 'typed.js';
+
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
