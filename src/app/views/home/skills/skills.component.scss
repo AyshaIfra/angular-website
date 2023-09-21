@@ -79,15 +79,27 @@
         text-align: left;
     }
 
-    .grids-contact {
-        .left-item {
-            
+    .grid-skills {
+        
+        .bar {
+
+            ::ng-deep .progress {
+                border-radius: 2px;
+                background-color: rgba(77,56,36,.82);
+                height: 1.25rem;
+            }
+
+            ::ng-deep .progress-bar {
+                background-color: rgba(71,67,64,.82);   
+            }        
         }
     }
 }
 
+
+
 @media screen and (max-width: 991px) {
-    .grids-contact .row {
+    .grid-skills .row {
         flex-direction: column;
         padding: 0rem 2rem;
     }
