@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class WorkComponent implements OnInit {
   
   
-isCollapsed=false;
+  isCollapsed=false;
   constructor() { }
 
   ngOnInit(): void {

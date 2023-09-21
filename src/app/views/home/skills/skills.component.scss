@@ -1,0 +1,95 @@
+.process { 
+    background-color: #141414;
+    padding: 5rem 0rem 4rem 0rem;
+
+    .content {
+        font-family: Raleway,Arial, Helvetica, sans-serif;
+    
+        .text-h1 {
+            color: #dbad83;
+            font-weight: 700;
+            font-size: 4.5rem;
+    
+            .txt-clr {
+                color: #fff;
+            }
+        }
+    
+        .text-h6 {
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+    
+            .highlight {
+                color: #dbad83;  
+            }
+        }
+    
+        .text-p {
+            color: #fff;
+            font-size: 0.85rem;
+            font-weight: 400;
+            padding: 1.5rem 0rem 3rem 0rem;
+            letter-spacing: 2px;
+            opacity: 0.9;
+        }
+    
+    }
+
+    .nav {
+        // background: rgba(15,14,14,.85);
+        padding: 5px 0px;
+    }
+
+    .nav-tabs {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+
+    }
+
+    .nav-tabs .nav-link {
+        background: rgba(20,20,20,.88);
+        color: #dbad83;
+        border: none;
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-family: Raleway,Arial, Helvetica, sans-serif;
+    }
+
+    .nav-tabs .nav-link.active {
+        background: rgba(20,20,20,.88);
+        color: #fff;
+        border: none;
+    }
+
+    .nav-tabs .nav-link:hover {
+        background: rgba(20,20,20,.88);
+        color: #fff;
+        border: none;
+    }
+
+    .skill-paragraph {
+        color: #fff;
+        font-size: 0.85rem;
+        font-weight: 400;
+        padding: 1.5rem 0rem 3rem 0rem;
+        letter-spacing: 2px;
+        opacity: 0.9;
+        text-align: left;
+    }
+
+    .grids-contact {
+        .left-item {
+            
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .grids-contact .row {
+        flex-direction: column;
+        padding: 0rem 2rem;
+    }
+}
+

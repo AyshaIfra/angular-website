@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgbModule,NgbCollapseModule,NgbNavModule} from "@ng-bootstrap/ng-bootstrap";
+import { NgbModule,NgbCollapseModule,NgbNavModule, NgbProgressbarModule} from "@ng-bootstrap/ng-bootstrap";
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
@@ -13,6 +13,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { HowWeWorkComponent } from './how-we-work/how-we-work.component';
+import { NumbersComponent } from './numbers/numbers.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HowWeWorkComponent } from './how-we-work/how-we-work.component';
     ContactComponent,
     WhoWeAreComponent,
     HowWeWorkComponent,
-    WorkComponent
+    WorkComponent,
+    NumbersComponent
     
      
   ],
@@ -35,7 +37,8 @@ import { HowWeWorkComponent } from './how-we-work/how-we-work.component';
     HomeRoutingModule,
     NgbCollapseModule,
     NgbModule,
-    NgbNavModule
+    NgbNavModule,
+    NgbProgressbarModule
   ]
 })
 export class HomeModule { }

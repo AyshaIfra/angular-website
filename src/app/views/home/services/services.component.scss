@@ -117,5 +117,7 @@
 @media screen and (max-width: 992px) {
     .grid-elements .row {
         flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }

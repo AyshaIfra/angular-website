@@ -1,0 +1,46 @@
+.footer {
+    background-color: #000;
+    padding: 5rem 0rem 2rem 0rem;
+
+
+    .text-h5 {
+        font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        color: #fff;  
+        padding-top: 1rem;
+    }
+
+    .text-p {
+        font-weight: 300;
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+        color: #fff; 
+        opacity: 0.85;
+    }
+
+    .ul-list {
+        list-style-type: '- ';
+        padding: 0;
+        color: #fff;
+        font-size: 0.85rem;
+        opacity: 0.75;
+        letter-spacing: 1px;
+
+        li {
+            padding-bottom: 0.85rem;
+        }
+    }
+}
+
+.reserved {
+    background-color:#141414;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+@media screen and (max-width: 991px) {
+    .footer .rows {
+        flex-direction: column;
+        padding: 3rem;
+    }
+}

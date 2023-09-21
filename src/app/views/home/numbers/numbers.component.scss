@@ -1,0 +1,108 @@
+.our-numbers {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    animation: bg-counter 5s infinite alternate-reverse; 
+    text-align: center;
+    // height: 80vh;
+
+    .bg-clr{
+        background-color: #141414;
+        opacity: 0.75;
+        padding: 7% 0%;
+        // height: 80vh;
+    }  
+    
+    .text-h4 {
+        font-weight: 600;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        color: #dbad83; 
+        font-family: Raleway,Arial, Helvetica, sans-serif;
+        
+        .text-h4-span {
+            color: #fff;
+        }
+    }
+
+    .text-h6 {
+        color: #fff;
+        font-weight: 600;
+        font-size: 0.85rem;
+        letter-spacing: 2px;
+        font-family: Raleway,Arial, Helvetica, sans-serif;
+    
+        .highlight {
+            color: #dbad83;  
+        }
+    }
+
+
+    .body-content {
+
+        .background-b {
+            background-color: rgba(71,67,64,.35)!important;
+            color: #fff;
+        }
+
+        .background-h {
+            background-color: rgba(15,14,14,.95)!important;
+            color: #fff;
+        }
+
+        .background-c {
+            background-color: rgba(255,255,255,.1)!important;
+
+            .text-h3 {
+                font-size: 3rem;
+                font-weight: 600;
+                padding: 0.25rem 0rem;
+            }
+        }
+
+        .line-h {
+            height: 4rem;
+        }
+
+        .text-h6-n  {
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            padding: 0.75rem 0rem 3rem 0rem;
+            font-family: Raleway,Arial, Helvetica, sans-serif; 
+        }
+    }
+
+    .text-para {
+        padding: 1% 15%;
+        color: #fff;
+        font-weight: 600;
+        font-size: 0.85rem;
+        letter-spacing: 2px;
+    }
+
+    
+}
+  
+@keyframes bg-counter {
+  0% {
+    background-image: url('/assets/images/numbers/bg-1.jpg');
+  }
+  
+  100% {
+    background-image: url('/assets/images/numbers/bg-2.jpg');
+  }
+}
+
+@media screen and (max-width: 991px) {
+    .body-content .row1 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .our-numbers {
+         height: auto;
+    }
+
+}
