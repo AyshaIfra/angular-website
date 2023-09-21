@@ -15,6 +15,7 @@ import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { HowWeWorkComponent } from './how-we-work/how-we-work.component';
 import { NumbersComponent } from './numbers/numbers.component';
 
+
 @NgModule({
   declarations: [
     HomeComponent,

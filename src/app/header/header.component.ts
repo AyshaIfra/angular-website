@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 @Component({
@@ -8,7 +10,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   isOpen: boolean = false;
-  constructor() { }
+  @Output() sectionId = new EventEmitter()
+
+  constructor(private roter: Router) { }
 
   ngOnInit(): void {
   }
@@ -16,5 +20,11 @@ export class HeaderComponent implements OnInit {
   toggleNavbar() {
     this.isOpen = !this.isOpen;
   }
-
+  
+  toggle(event:any) {
+    this.sectionId.emit(event.target.id)
+  }
+  navigagte(url:any){
+      this.roter.navigate([url]);
+  }
 }
