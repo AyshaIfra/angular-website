@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { NgbCollapseModule } from "@ng-bootstrap/ng-bootstrap";
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,7 +13,8 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbCollapseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

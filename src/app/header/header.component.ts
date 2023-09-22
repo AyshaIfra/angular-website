@@ -1,7 +1,5 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit, ElementRef, Renderer2 } from '@angular/core';
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 @Component({
   selector: 'app-header',
@@ -10,21 +8,29 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   isOpen: boolean = false;
-  @Output() sectionId = new EventEmitter()
+  constructor(private el: ElementRef, private renderer: Renderer2) {}
 
-  constructor(private roter: Router) { }
-
+  isMenuCollapsed = true;
   ngOnInit(): void {
   }
 
   toggleNavbar() {
     this.isOpen = !this.isOpen;
+    this.isMenuCollapsed = ! this.isMenuCollapsed
   }
-  
-  toggle(event:any) {
-    this.sectionId.emit(event.target.id)
+
+  setActiveLink(linkId: string) {
+    this.isMenuCollapsed = true;
+    console.log(this.isMenuCollapsed)
+    const navLinks = this.el.nativeElement.querySelectorAll('.nav-link');
+
+    navLinks.forEach((link: HTMLElement) => {
+      if (link.id === linkId) {
+        this.renderer.addClass(link, 'active');
+      } else {
+        this.renderer.removeClass(link, 'active');
+      }
+    });
   }
-  navigagte(url:any){
-      this.roter.navigate([url]);
-  }
+ 
 }

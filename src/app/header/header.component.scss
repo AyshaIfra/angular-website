@@ -29,6 +29,16 @@
   letter-spacing: 3px;
   text-transform: uppercase;
 }
+
+.navbar .nav-link:hover{
+  color: #fff;
+}
+
+
+.navbar .nav-link.active {
+  color: #fff;
+}
+
 .navbar-toggler, .menu-toggler {
   border: none; 
   outline: none; 
