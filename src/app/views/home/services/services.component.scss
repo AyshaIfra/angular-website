@@ -5,12 +5,6 @@
     .content {
         font-family: Raleway,Arial, Helvetica, sans-serif;
     
-        h1 {
-            color: #dbad83;
-            font-weight: 700;
-            font-size: 4.5rem;
-        }
-    
         h6 {
             color: #fff;
             font-weight: 600;
@@ -32,6 +26,12 @@
         }
     
     }
+}
+
+.text-service-h1 {
+    color: #dbad83;
+    font-weight: 700;
+    font-size: 4.5rem;
 }
 
 
@@ -121,3 +121,10 @@
         padding-right: 2rem;
     }
 }
+
+@media screen and (max-width: 376px) {
+    .text-service-h1 {
+        font-size: 2.5rem;
+    }
+  }
+  

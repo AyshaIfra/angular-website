@@ -10,7 +10,7 @@
         color: #dbad83;
         font-weight: 700;
         font-size: 4.5rem;
-
+         text-align: center;
         .txt-clr {
             color: #fff;
         }
@@ -103,5 +103,12 @@
         flex-direction: column;
         justify-content: center;
     }
+}
 
+@media screen and (max-width: 476px) {
+    .content {
+        .text-h1 {
+            font-size: 3rem;
+        }
+    }
 }

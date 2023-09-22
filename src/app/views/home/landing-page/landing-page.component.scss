@@ -16,8 +16,8 @@
 }
 
 .contents {
-    width:97.5%;
-    margin: 0% 1.25% 0% 1.25%;
+    width:100%;
+    // margin: 0% 1.25% 0% 1.25%;
 }
 
 .slider{
@@ -98,6 +98,26 @@
   border: 1px solid rgba(255,255,255,.7)!important;
   background-color: rgba(27,28,36,.9)!important;
   color: #fff;
+}
+
+@media screen and (max-width: 482px) {
+  .text-title {
+    font-size: 4rem;
+  }
+
+  .typewriter {
+    font-size: 1.75rem
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .text-title {
+    font-size: 2.5rem;
+  }
+
+  .typewriter {
+    font-size: 1.5rem
+  }
 }
 
 
