@@ -12,4 +12,11 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  contact = {
+    "title": "CONTACT",
+    "sub_title": "KEEP IN TOUCH",
+    "email_1": "info@ouraddress.com",
+    "email_2": "www.ouraddress.com"
+  }
+
 }

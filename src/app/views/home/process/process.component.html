@@ -4,101 +4,27 @@
             <h1 class="text-h1">OUR <span class="txt-clr">PROCESS</span></h1>
             <h6 class="text-h6">WE MAKE <span class="highlight">OUR CUSTOMERS HAPPY</span></h6>
             <p class="text-p">
-                Curabitur eget nulla ut neque aliquam dictum. 
-                Nam sollicitudin leo dui, non malesuada felis aliquam non. 
-                Pellentesque habitant morbi tristique senectus et netus et malesuada 
-                fames ac turpis egestas. Phasellus finibus tempor neque vel scelerisque. 
-                Cras nec ex ut eleifend mollis ut a nibh. Vivamus commodo est sit 
-                amet ultricies.
+                {{process?.paragraph}}
             </p>
         </div>
 
         <div class="grids">
             <div class="row">
-                <div class="col">
+                <div class="col" *ngFor="let item of process?.grid_items">
                     <div class="row d-flex align-items-center">
                         <div class="col-3 dashed d-none d-lg-block"></div>
                         <div class="col-6 p-0">
                             <div class="box-content">
-                                <i class="fa fa-search icon" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="col-3 dashed d-none d-lg-block"></div>
-                    </div>
-                    <div class="row ">
-                        <div class="col box-body-content">
-                            <h6 class="text-2-h6">RESEARCH</h6>
-                            <p class="text-2-p">
-                                Vestibulum placerat, 
-                                ipsum vel mollis ornare, 
-                                libero ex dapibus diam, 
-                                gravida tempor.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-3 dashed d-none d-lg-block"></div>
-                        <div class="col-6 p-0">
-                            <div class="box-content">
-                                <i class="fa fa-pencil icon"></i>
+                                <i class="{{item?.icon}} icon" aria-hidden="true"></i>
                             </div>
                         </div>
                         <div class="col-3 dashed d-none d-lg-block"></div>
                     </div>
                     <div class="row">
                         <div class="col box-body-content">
-                            <h6 class="text-2-h6">CONCEPT</h6>
+                            <h6 class="text-2-h6">{{item?.title}}</h6>
                             <p class="text-2-p">
-                                Vestibulum placerat, 
-                                ipsum vel mollis ornare, 
-                                libero ex dapibus diam, 
-                                gravida tempor.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-3 dashed d-none d-lg-block"></div>
-                        <div class="col-6 p-0">
-                            <div class="box-content">
-                                <i class="fa fa-gear icon"></i>
-                            </div>
-                        </div>
-                        <div class="col-3 dashed d-none d-lg-block"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col box-body-content">
-                            <h6 class="text-2-h6">DEVELOP</h6>
-                            <p class="text-2-p">
-                                Vestibulum placerat, 
-                                ipsum vel mollis ornare, 
-                                libero ex dapibus diam, 
-                                gravida tempor.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-3 dashed d-none d-lg-block"></div>
-                        <div class="col-6 p-0">
-                            <div class="box-content">
-                                <i class="fa fa-send-o icon"></i>
-                            </div>
-                        </div>
-                        <div class="col-3 dashed d-none d-lg-block"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col box-body-content">
-                            <h6 class="text-2-h6">TEST</h6>
-                            <p class="text-2-p">
-                                Vestibulum placerat, 
-                                ipsum vel mollis ornare, 
-                                libero ex dapibus diam, 
-                                gravida tempor.
+                                {{item?.paragraph}}.
                             </p>
                         </div>
                     </div>
@@ -108,11 +34,7 @@
 
         <div class="paragraph">
             <p class="paragraph-p">
-                Aliquam fermentum massa ac est sollicitudin, 
-                at ultricies ligula tristique. Cras finibus, 
-                nulla ac convallis feugiat, nisl nisl lobortis 
-                est, eget auctor velit magna vel nunc. 
-                Donec nec eros rhoncus.
+                {{process?.bottom_paragraph}}
             </p>
         </div>
     </div>

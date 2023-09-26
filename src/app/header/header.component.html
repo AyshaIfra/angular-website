@@ -4,42 +4,30 @@
             <a class="navbar-brand" href="">SKROLL<span class="highlight">EX</span></a>
         </div>
         
-        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto w-100 justify-content-end">
-                <li class="nav-item"><a class="nav-link active" href="#home" id="home-link" (click)="setActiveLink('home-link')">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about" id="about-link" (click)="setActiveLink('about-link')">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#team" id="team-link" (click)="setActiveLink('team-link')">Team</a></li>
-                <li class="nav-item"><a class="nav-link" href="#service" id="service-link" (click)="setActiveLink('service-link')">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#work" id="work-link" (click)="setActiveLink('work-link')">Work</a></li>
-                <li class="nav-item"><a class="nav-link" href="#process" id="process-link" (click)="setActiveLink('process-link')">Process</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skill" id="skill-link" (click)="setActiveLink('skill-link')">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact" id="contact-link" (click)="setActiveLink('contact-link')">Contact</a></li>
-            </ul>
-        </div> -->
-
         <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
-                <li class="nav-item"><a class="nav-link active" href="#home" id="home-link" (click)="setActiveLink('home-link')">Home</a></li>
+                <li class="nav-item" *ngFor="let item of navItem?.navLink">
+                    <a class="nav-link" href="{{item.href}}" id="{{item.id}}" (click)="setActiveLink('{{item.id}}')" >{{item.title}}</a>
+                </li>
+
+                <!-- <li class="nav-item" *ngFor="let link of navLinks">
+                    <a class="nav-link" [class.active]="isActive(link.href)"  [href]="link.href" [id]="link.id">{{ link.title}}</a>
+                </li> -->
+                <!-- <li class="nav-item"><a class="nav-link active" href="#home" id="home-link" (click)="setActiveLink('home-link')">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about" id="about-link" (click)="setActiveLink('about-link')">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#team" id="team-link" (click)="setActiveLink('team-link')">Team</a></li>
                 <li class="nav-item"><a class="nav-link" href="#service" id="service-link" (click)="setActiveLink('service-link')">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#work" id="work-link" (click)="setActiveLink('work-link')">Work</a></li>
                 <li class="nav-item"><a class="nav-link" href="#process" id="process-link" (click)="setActiveLink('process-link')">Process</a></li>
                 <li class="nav-item"><a class="nav-link" href="#skill" id="skill-link" (click)="setActiveLink('skill-link')">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact" id="contact-link" (click)="setActiveLink('contact-link')">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact" id="contact-link" (click)="setActiveLink('contact-link')">Contact</a></li> -->
             </ul>
         </div>
 
         <div>
-
-            <!-- <button class="navbar-toggler" (click)="toggleNavbar()" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i [ngClass]="{'fa-bars': !isOpen, 'fa-times': isOpen}" class="fa " style="color: #fff;"></i>
-            </button> -->
-
             <button class="navbar-toggler" type="button" (click)="toggleNavbar()" >
                 <i [ngClass]="{'fa-bars': !isOpen, 'fa-times': isOpen}" class="fa " style="color: #fff;"></i>
             </button>
-     
 
             <button *ngIf="!isOpen" class="menu-toggler" type="button">
                 <i class="fa fa-bars" style="color: #dbab83;"></i>

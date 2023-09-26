@@ -1,92 +1,35 @@
 <div class="team">
     <div class="container text-center">
         <div class="content">
-            <h1>TEAM</h1>
+            <h1>{{team?.team}}</h1>
             <h6>WHO <span class="highlight">WE ARE</span></h6>
             <p class="text-p">
-                Our success depends on the strength of our team. Lorem ipsum dolor sit amet, 
-                consectetur adipisicing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation.
+                {{team?.paragraph}}
             </p>
 
-            <div class="row">
-                <div class="col col-md">
+            <div class="row row-cols-4">
+                <div class="col col-md" *ngFor="let item of team?.grid_items">
                     <div class="containers">
-                        <img src="/assets/images/team/1.jpg" alt="Avatar" class="image" style="width:100%">
+                        <img src="{{item?.image}}" alt="Avatar" class="image" style="width:100%">
                         <div class="middle">
                             <div class="text">
                                 <p>
-                                    Duis aute irure dolor in reprehenderit in voluptate 
-                                    velit esse cillum dolore eu fugiat nulla pariatur.
+                                   {{item?.text}}
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="names-title">
-                        <p class="name-p">MIKE JOHNSON</p>
-                        <p class="title-p">CEO & Founder</p>
+                        <p class="name-p">{{item?.name}}</p>
+                        <p class="title-p">{{item?.position}}</p>
                     </div>   
-                </div>
-                <div class="col col-md">
-                    <div class="containers">
-                        <img src="/assets/images/team/2.jpg" alt="Avatar" class="image" style="width:100%">
-                        <div class="middle">
-                            <div class="text">
-                                <p>
-                                    Duis aute irure dolor in reprehenderit in voluptate 
-                                    velit esse cillum dolore eu fugiat nulla pariatur.
-                                </p>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="names-title">
-                        <p class="name-p">JESSICA SPECTER</p>
-                        <p class="title-p">CEO & Founder</p>
-                    </div>
-                </div>
-                <div class="col col-md">
-                    <div class="containers">
-                        <img src="/assets/images/team/3.jpg" alt="Avatar" class="image" style="width:100%">
-                        <div class="middle">
-                            <div class="text">
-                                <p>
-                                    Duis aute irure dolor in reprehenderit in voluptate 
-                                    velit esse cillum dolore eu fugiat nulla pariatur.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="names-title">
-                        <p class="name-p">ANDREW MILES</p>
-                        <p class="title-p">Developer</p>
-                    </div> 
-                </div>
-                <div class="col col-md">
-                    <div class="containers">
-                        <img src="/assets/images/team/4.jpg" alt="Avatar" class="image" style="width:100%">
-                        <div class="middle">
-                            <div class="text">
-                                <p>
-                                    Duis aute irure dolor in reprehenderit in voluptate 
-                                    velit esse cillum dolore eu fugiat nulla pariatur.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="names-title">
-                        <p class="name-p">MIKE JOHNSON</p>
-                        <p class="title-p">Programmer</p>
-                    </div>
                 </div>
             </div>
 
             <h4 style="color: #fff;">WE WANT TO CHANGE</h4>
             <h4 style="color: #dbab83;">PEOPLES LIVES</h4>
             <p class="text-p-2">
-                Aliquam fermentum massa ac est sollicitudin, at ultricies ligula 
-                tristique. Cras finibus, nulla ac convallis feugiat, nisl nisl 
-                lobortis est, eget auctor velit magna vel nunc. Donec nec eros 
-                rhoncus.
+                {{team?.paragraph_2}}
             </p>
 
         </div>
